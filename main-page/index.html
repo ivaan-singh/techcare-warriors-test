@@ -457,8 +457,8 @@
   .compare-table th:nth-child(4) { background: rgba(0,255,178,0.05); border-left: 1px solid rgba(0,255,178,0.12); border-right: 1px solid rgba(0,255,178,0.12); border-top: 2px solid var(--accent); }
   .yes { color: var(--accent); font-weight: 700; font-size: 14px; }
   .no { color: var(--muted); font-weight: 700; font-size: 14px; }
-  .permobil-link { color: inherit; text-decoration: none !important; transition: color 0.25s, text-shadow 0.25s; }
-  .permobil-link:hover { color: var(--accent); text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--accent) !important; text-shadow: 0 0 8px rgba(0,255,178,0.5), 0 0 20px rgba(0,255,178,0.2); }
+  .product-link { color: inherit; text-decoration: none !important; transition: color 0.25s, text-shadow 0.25s; }
+  .product-link:hover { color: var(--accent); text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--accent) !important; text-shadow: 0 0 8px rgba(0,255,178,0.5), 0 0 20px rgba(0,255,178,0.2); }
   .smartdrive-link { text-decoration: none !important; transition: color 0.25s, text-shadow 0.25s; }
   .smartdrive-link:hover { color: var(--accent) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--accent) !important; text-shadow: 0 0 8px rgba(0,255,178,0.5), 0 0 20px rgba(0,255,178,0.2); }
 
@@ -533,12 +533,13 @@
   border-radius: 4px;
   overflow: hidden;
   background: var(--surface);
+  margin-bottom: 16px;
 }
 
 .endorsement-card img {
   width: 100%;
-  height: 200px;         /* force consistent height */
-  object-fit: cover;     /* keeps it looking clean */
+  height: 200px;
+  object-fit: cover;
   display: block;
 }
   
@@ -768,7 +769,7 @@
             <tr>
               <th>Criteria</th>
               <th style="color:var(--muted2)">DIY Kits</th>
-              <th style="color:var(--muted2)"><a href="https://hub.permobil.com/smartdrive" target="_blank" class="permobil-link">Permobil Smartdrive</a></th>
+              <th style="color:var(--muted2)"><a href="https://hub.permobil.com/smartdrive" target="_blank" class="product-link">Permobil Smartdrive</a></th>
               <th><a href="https://ivaansingh.com/techcare-warriors" target="_blank" class="smartdrive-link">SmartDrive Assist ✦</a></th>
             </tr>
           </thead>
@@ -797,7 +798,7 @@
             <tr><td>Manual Wheelchair</td><td>₹1,500 – ₹15,000</td><td>Low</td><td style="color:var(--muted2)">Budget-friendly, no assist</td></tr>
             <tr><td>Electric Wheelchair</td><td>₹45,000 – ₹3,00,000</td><td>High</td><td style="color:var(--muted2)">Expensive</td></tr>
             <tr><td>DIY Conversion Kit</td><td>₹8,000 – ₹20,000</td><td>High</td><td style="color:var(--muted2)">Unreliable</td></tr>
-            <tr><td><a href="https://hub.permobil.com/smartdrive" target="_blank" class="permobil-link">Permobil Smartdrive</a></td><td>₹45,000 – ₹3,00,000</td><td>Very High</td><td style="color:var(--muted2)">Premium only</td></tr>
+            <tr><td><a href="https://hub.permobil.com/smartdrive" target="_blank" class="product-link">Permobil Smartdrive</a></td><td>₹45,000 – ₹3,00,000</td><td>Very High</td><td style="color:var(--muted2)">Premium only</td></tr>
             <tr><td><a href="https://ivaansingh.com/techcare-warriors" target="_blank" class="smartdrive-link">SmartDrive Assist ✦</a></td><td>₹5,000 – ₹10,000</td><td>Low</td><td><span class="yes">Best-in-class</span></td></tr>
           </tbody>
         </table>
@@ -818,14 +819,14 @@
       <div>
         <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:12px;">// Endorsement Letter</div>
         <p class="section-desc" style="margin-bottom:20px; font-size:13px;">
-          Formally endorsed by <strong style="color:var(--text)"><a href="https://www.bhsfindia.org/" target="_blank">
+          Formally endorsed by <strong style="color:var(--text)"><a href="https://www.bhsfindia.org/" target="_blank" class="product-link">
   BraveHeart Soldier Foundation
 </a></strong> — working with ex-servicemen, their widows and dependents in association with the Ministry of Defence, India.
         </p>
         <div class="endorsement-card">
           <img src="/techcare-warriors/images/endorsement_full.jpg" onclick="openLightbox()" style="cursor:none;">
           <div class="endorsement-card-overlay">
-            <div class="endorsement-org"><a href="https://www.bhsfindia.org/" target="_blank">
+            <div class="endorsement-org"><a href="https://www.bhsfindia.org/" target="_blank" class="product-link">
   BraveHeart Soldier Foundation
 </a></div>
             <div class="endorsement-hint">Official Endorsement</div>
@@ -833,7 +834,7 @@
           </div>
         </div>
         <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted2);padding:14px 18px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent2);border-radius:4px;">
-            <span style="color:var(--text);font-weight:700;">Anuj Sharma</span><br>Director, <a href="https://www.bhsfindia.org/" target="_blank">
+            <span style="color:var(--text);font-weight:700;">Anuj Sharma</span><br>Director, <a href="https://www.bhsfindia.org/" target="_blank" class="product-link">
   BraveHeart Soldier Foundation
 </a>
           </div>
@@ -852,12 +853,12 @@
         </div>
         <div style="display:flex;flex-direction:column;gap:10px;">
           <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted2);padding:14px 18px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent2);border-radius:4px;">
-            <span style="color:var(--text);font-weight:700;">Prateek Madhav</span><br>CEO & Co-Founder, <a href="https://atflabs.org/" target="_blank">
+            <span style="color:var(--text);font-weight:700;">Prateek Madhav</span><br>CEO & Co-Founder, <a href="https://atflabs.org/" target="_blank" class="product-link">
   AssisTech Foundation
 </a>
           </div>
           <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted2);padding:14px 18px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent2);border-radius:4px;">
-            <span style="color:var(--text);font-weight:700;">Nidhi Gururaj</span><br>Program Associate, <a href="https://atflabs.org/" target="_blank">
+            <span style="color:var(--text);font-weight:700;">Nidhi Gururaj</span><br>Program Associate, <a href="https://atflabs.org/" target="_blank" class="product-link">
   AssisTech Foundation
 </a>
           </div>
