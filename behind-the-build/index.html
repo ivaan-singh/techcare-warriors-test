@@ -438,7 +438,8 @@
     const hours_siraaj = 10;
     const hours_utsa = 48;
     const hours_tutor = 17;
-    const target = hours * sessions + hours_ivaan + hours_siraaj + hours_utsa + hours_tutor;
+    const hours_extra = 24;
+    const target = hours * sessions + hours_ivaan + hours_siraaj + hours_utsa + hours_tutor + hours_extra;
     let finalTarget = target % 1 === 0.5 ? Math.ceil(target) : target;
     const duration = 1800;
     const start = performance.now();
