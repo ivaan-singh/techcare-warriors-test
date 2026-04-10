@@ -462,6 +462,14 @@
   .smartdrive-link { text-decoration: none !important; transition: color 0.25s, text-shadow 0.25s; }
   .smartdrive-link:hover { color: var(--accent) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--accent) !important; text-shadow: 0 0 8px rgba(0,255,178,0.5), 0 0 20px rgba(0,255,178,0.2); }
 
+  /* VALIDATION */
+  .validation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
   /* FOOTER */
   footer { padding: 40px 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--surface); flex-wrap: wrap; gap: 12px; }
   .footer-brand { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted2); font-style: italic; }
@@ -555,6 +563,11 @@
     footer { flex-direction: column; text-align: center; }
     .hero-stats { gap: 24px; }
   }
+@media (max-width: 900px) {
+  .validation-grid {
+    grid-template-columns: 1fr;
+  }
+}
   @media (max-width: 600px) {
     .features-grid { grid-template-columns: 1fr; }
     .components-grid { grid-template-columns: repeat(2, 1fr); }
@@ -815,7 +828,7 @@
     <div class="section-label">// 06 — Validation</div>
     <h2 class="section-title">Backed by<br><span>real impact.</span></h2>
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; margin-bottom:0;">
+<div class="validation-grid">
 
       <!-- Left: endorsement -->
         <div>
